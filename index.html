@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO(you): Make whatever changes needed to complete the assignment! -->
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer="true"></script>
+</head>
+
+<body>
+  <!--
+
+    ******************************************
+    DO NOT TRANSCRIBE THE ARTICLE YOURSELF!!!!
+    ******************************************
+
+    You do not have to type in all of the text on the page!
+
+    The contents of the article is in `index-content.txt`, which is
+    included in this directory. Copy and paste the contents of that file into
+    this HTML file as needed. You should only need to add HTML to markup the
+    content.
+
+  -->
+    <header>
+        <div id="course-name">
+            <strong>WPR</strong>
+        </div>
+        <div id="mern-stack">
+        <strong>M</strong>
+        <strong>E</strong>
+        <strong>R</strong>
+        <strong>N</strong>
+        </div>  
+    </header>
+
+    <article>
+        <section id="quiz-name">
+            <h1>HTML Quiz</h1>
+        </section>
+
+        <!-- Screen 1 -->
+        <section id="introduction">
+            <p class="author">By Nguyen Thuy Duong</p>
+            <h2>The Test</h2>
+            <p>The test contains 10 questions and there is no time limit.</p>
+            <p> The test is not official, it's just a nice way to see how much you know, or don't know, about HTML.</p>
+            <h2>Count Your Score</h2>
+            <p>You will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed.
+                Maximum score is 10 points.</p>
+            <div class="container-start-quiz">
+                <h2>Start the quiz</h2>
+                <p>Good luck!</p>
+                <button class="btn-start">Start the HTML quiz ❯ </button>
+            </div>
+        </section>
+
+        <!-- Screen 2 -->
+        <section id="attempt-quiz">
+            <!-- Question Template -->
+            <!-- Selected -->
+            <div class="question">                
+                <h2>Question 1 of 10</h2>
+                <p>question 5</p>
+                <div class="option">
+                    <label class="checked">
+                        <input type="radio" id="question1a1" name="question1" value="answer1" checked>option1
+                    </label>
+                    <label>
+                        <input type="radio" id="question1a2" name="question1" value="answer2">option2
+                    </label>
+                    <label>
+                        <input type="radio" id="question1a2" name="question1" value="answer3">option3
+                    </label>
+                    <label>
+                        <input type="radio" id="question1a4" name="question1" value="answer4">option4
+                    </label>
+                </div> 
+            </div>
+            <!-- Selected -->
+            <div class="question">
+                <h2>Question 2 of 10</h2>
+                <p>question 4</p>
+                <div class="option">
+                    <label>
+                        <input type="radio" id="question2a1" name="question2" value="answer1">option1
+                    </label>
+                    <label>
+                        <input type="radio" id="question2a2" name="question2" value="answer2">option2
+                    </label>
+                    <label>
+                        <input type="radio" id="question2a3" name="question2" value="answer3">option3
+                    </label>
+                    <label class="checked">
+                        <input type="radio" id="question2a4" name="question2" value="answer4" checked>option4
+                    </label>
+                </div> 
+            </div>
+            <!-- Not selected -->
+            <div class="question">
+                <h2>Question 3 of 10</h2>
+                <p>question 6</p>
+                <div class="option">
+                    <label>
+                        <input type="radio" id="question3a1" name="question3" value="answer1">option1
+                    </label>
+                    <label>
+                        <input type="radio" id="question3a2" name="question3" value="answer2">option2
+                    </label>
+                    <label>
+                        <input type="radio" id="question3a3" name="question3" value="answer3">option3
+                    </label>
+                    <label>
+                        <input type="radio" id="question3a4" name="question3" value="answer4">option4
+                    </label>
+                </div> 
+            </div>
+            <!-- End Question Template-->
+            <div class="container-attempt-quiz">
+                <button class="btn-submit">Submit your answers ❯ </button>
+            </div>
+        </section>
+
+        <!-- Screen 3 -->
+        <section id="review-quiz">
+            <!-- Question Template -->
+            <div class="question">
+                <!-- Selected correct -->
+                <h2>Question 1 of 10</h2>
+                <p>question 5</p>
+                <div class="option">
+                    <label class="correct">
+                        <input type="radio" id="question4a1" name="question4" value="answer1" disabled checked>option1
+                        <div class="label-check">
+                            <span>Correct answer</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" id="question4a2" name="question4" value="answer2" disabled>option2
+                    </label>
+                    <label>
+                        <input type="radio" id="question4a3" name="question4" value="answer3" disabled>option3
+                    </label>
+                    <label>
+                        <input type="radio" id="question4a4" name="question4" value="answer4" disabled>option4
+                    </label>
+                </div> 
+            </div>
+            <!-- Selected incorrect -->
+            <div class="question">
+                <h2>Question 2 of 10</h2>
+                <p>question 4</p>
+                <div class="option">
+                    <label>
+                        <input type="radio" id="question5a1" name="question5" value="answer1" disabled>option1
+                    </label>
+                    <label>
+                        <input type="radio" id="question5a2" name="question5" value="answer2" disabled>option2
+                    </label>
+                    <label class="checked">
+                        <input type="radio" id="question5a3" name="question5" value="answer3" disabled>option3
+                        <div class="label-check">
+                            <span>Correct answer</span>
+                        </div>
+                    </label>
+                    <label class="wrong">
+                        <input type="radio" id="question5a4" name="question5" value="answer4" disabled checked>option4
+                        <div class="label-check">
+                            <span>Your answer</span>
+                        </div>
+                    </label>
+                </div> 
+            </div>
+            <!-- Not selected with correct answer -->
+            <div class="question">
+                <h2>Question 3 of 10</h2>
+                <p>question 6</p>
+                <div class="option">
+                    <label>
+                        <input type="radio" id="question6a1" name="question6" value="answer1" disabled>option1
+                    </label>
+                    <label class="checked">
+                        <input type="radio" id="question6a2" name="question6" value="answer2" disabled>option2
+                        <div class="label-check">
+                            <span>Correct answer</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" id="question6a3" name="question6" value="answer3" disabled>option3                        
+                    </label>
+                    <label>
+                        <input type="radio" id="question6a4" name="question6" value="answer4" disabled>option4
+                    </label>
+                </div> 
+            </div>
+            <!-- End Question Template -->
+            <div class="container-review-quiz">
+                <h2>Result:</h2>
+                <p class="score">1/10</p>
+                <strong class="percent">10%</strong>
+                <p class="text-review">Practice more to improve it :D</p>
+                <button class="btn-review">Try again</button>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
