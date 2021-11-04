@@ -47,6 +47,9 @@ header {
     margin-right: 5px;
 }
 /* Quiz-name */
+.hidden {
+    display: none;
+}
 #quiz-name {   
     background-image: url("images/background.jpg");
     height: 425px;
@@ -130,6 +133,7 @@ label {
 label input {
     margin: 0 15px 0 0;
 }
+
 #attempt-quiz .question label:hover, .checked{
     background-color: #ddd;
 }
