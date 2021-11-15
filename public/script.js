@@ -93,7 +93,8 @@ btnStart.addEventListener('click', function(){
     document.querySelector('#introduction').classList.add('hidden');
     document.querySelector('#attempt-quiz').classList.remove('hidden');
 
-    fetch('https://wpr-quiz-api.herokuapp.com/attempts', {
+    //https://wpr-quiz-api.herokuapp.com
+    fetch('/attempts', {
         method: "POST",
         headers:{
             'Content-Type':'application/json'
@@ -196,7 +197,7 @@ btnSubmit.addEventListener('click', function(){
 
         //Call API and display review screen
         const answerPack = getAnswers();
-        fetch(`https://wpr-quiz-api.herokuapp.com/attempts/${packId}/submit`, {
+        fetch(`/attempts/${packId}/submit`, {
             method: "POST",
             headers: {
                 'Content-Type':'application/json'
