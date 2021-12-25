@@ -1,0 +1,164 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+html {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body, #introduction .author, #introduction h2, #introduction p {
+    margin: 0;
+} 
+#introduction p, #introduction h2, .container-review-quiz h2 {
+    padding: 18px 0 0 0;
+}
+body {
+    width: 700px;
+    font-size: 18px;
+    font-family: 'Proxima', 'Helvetica', 'Arial', sans-serif;
+    color: #222222;
+}
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 1px #ccc solid;
+}
+#course-name {
+    font-family: 'Helvetica',sans-serif;
+    font-size: 32px;
+    color: #ee3322;
+}
+#mern-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mern-stack strong {
+    width: 50px;
+    height: 50px;
+    background-color: #ffee00;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-30deg);
+    margin-right: 5px;
+}
+/* Quiz-name */
+.hidden {
+    display: none;
+}
+#quiz-name {   
+    background-image: url("images/background.jpg");
+    height: 425px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#quiz-name h1 {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+    font-size: 60px;
+    color: black;
+    max-width: 75%;
+    padding: 10px;
+    align-self: center;
+}
+.author {
+    font-size: 14px;
+    text-align: center;
+}
+/* Screen 1,2,3 */
+#attempt-quiz, #review-quiz {
+    margin: 18px 0;
+}
+.container-start-quiz, .container-attempt-quiz, .container-review-quiz {
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+}
+.container-start-quiz {
+    margin-top: 36px;
+    padding: 36px 0;
+}
+.container-attempt-quiz {
+    padding: 18px 0;
+}
+.container-review-quiz .score {
+    font-size: 24px;
+}
+.btn-start, .btn-submit, .btn-review {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+}
+.btn-start{
+    margin-top: 36px;
+    background-color: #2196F3;
+}
+.btn-review {
+    margin: 18px 0;
+    background-color: #2196F3;
+}
+.btn-submit {
+    background-color: #4CAF50;
+}
+.btn-start:hover, .btn-review:hover {
+    background-color: #0d8bf2;
+}
+.btn-submit:hover{
+    background-color: #46a049;
+}
+/* Radio type question */
+.question {
+    margin: 30px 0;
+}
+.option {
+    margin: 30px 0;
+}
+label {
+    display: block;
+    position: relative;
+    margin: 1px 0;
+    padding: 15px;
+    background-color: #f1f1f1;
+}
+label input {
+    margin: 0 15px 0 0;
+}
+
+#attempt-quiz .question label:hover, .checked{
+    background-color: #ddd;
+}
+.correct {
+    background-color: #d4edda;
+}
+.wrong {
+    background-color: #f8d7da;
+}
+.label-check {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0,0,0, 0.2);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width:700px){
+    body{
+        width: 95%;    
+    } 
+}
+@media screen and (max-width:500px){ 
+    #mern-stack{
+        display: none;
+}}
