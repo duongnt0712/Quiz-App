@@ -1,0 +1,70 @@
+/* menu */
+aside {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    overflow: auto;
+    background: #042331;
+    color: #fff;
+    border-right: 1px solid #042331;
+}
+
+aside h3 {
+    font-family: 'Helvetica', sans-serif;
+    color: #ee3322;
+    text-align: center;
+    background: #fff;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+aside header {
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+
+    background-image: url('http://localhost:3000//images/background.jpg');
+    background-position: center;
+    background-size: cover;
+
+    height: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside header h2 {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 10px;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    color: white;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgb(32, 32, 32);
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+ul a:hover, ul a.active {
+    background: #063146;
+    padding-left: 50px;
+}
+/* END menu */
+
+i {
+    padding-right: 10px;
+}

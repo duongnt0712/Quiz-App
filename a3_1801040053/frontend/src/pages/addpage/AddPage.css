@@ -1,0 +1,16 @@
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input[type="text"], .form-group select {
+    width: 100%;
+}
+
+.text-right {
+    text-align: right;
+}
+

@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+    margin: 15px 0;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+tr, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+}
+
+#search {
+    text-align: center;
+}
+
+#search input {
+    border-radius: 15px;
+    width: 35%;
+}
