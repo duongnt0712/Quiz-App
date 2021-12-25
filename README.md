@@ -1,9 +1,9 @@
 # QuizzApp
 WPR assignment project: A2 (user space) + A3 (admin space)
-<br />
+<br /><br />
 HTML/CSS/JavaScript + ReactJS + NodeJS + MongoDB
 
-Firstly run `npm i` to create module_node folder
+Firstly run `npm i` in each folders to create module_node folder
 
 ### For user space 
 - Run `nodemon start`
